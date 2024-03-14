@@ -5,7 +5,7 @@ const soma = numA + numB;
 const subtracao = numA - numB;
 const multiplicacao = numA * numB;
 const divisao = numA / numB;
-const resto = numA % numB;
+const resto = numA - Math.floor(numA / numB) * numB;
 
 console.log(`Resultado da soma entre ${numA} e ${numB}: ${soma}`);
 console.log(`Resultado da subtração entre ${numA} e ${numB}: ${subtracao}`);
