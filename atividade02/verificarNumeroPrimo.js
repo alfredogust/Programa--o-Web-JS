@@ -1,4 +1,4 @@
-function verificarNumeroPrimeo(n) {
+function verificarNumeroPrimo(n) {
     if (n <= 1) {
         return false;
     }
