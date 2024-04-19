@@ -1,0 +1,15 @@
+{
+    "name": "atividade5",
+    "version": "1.0.0",
+    "description": "Aplicativo web com rotas para adicionar, listar, remover e editar produtos em um estoque",
+    "main": "app.js",
+    "dependencies": {
+      "express": "^4.17.1"
+    },
+    "scripts": {
+      "start": "node app.js"
+    },
+    "author": "alfredogust",
+    "license": "ISC"
+  }
+  
