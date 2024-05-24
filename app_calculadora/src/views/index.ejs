@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora Simples</title>
+</head>
+<body>
+  <h1>Calculadora Simples</h1>
+  <% if (error) { %>
+    <p style="color: red;"><%= error %></p>
+  <% } %>
+  <form action="/calcular" method="POST">
+    <input type="number" name="num1" placeholder="Digite o primeiro número" required>
+    <select name="operador">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    <input type="number" name="num2" placeholder="Digite o segundo número" required>
+    <button type="submit">Calcular</button>
+  </form>
+</body>
+</html>
