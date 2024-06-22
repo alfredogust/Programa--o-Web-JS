@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ShopHub - Home</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bem-vindo ao ShopHub</h1>
+
+    <% if (user) { %>
+      <p>Olá, <%= user.name %>! <a href="/logout">Sair</a></p>
+      <p><a href="/user-profile">Meu Perfil</a></p>
+    <% } else { %>
+      <p><a href="/login">Entrar</a> | <a href="/register">Registrar</a></p>
+    <% } %>
+
+    <p><a href="/products">Ver Produtos</a></p>
+  </div>
+</body>
+</html>
